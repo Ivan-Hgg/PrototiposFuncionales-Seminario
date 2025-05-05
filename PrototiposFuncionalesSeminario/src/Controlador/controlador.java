@@ -5,6 +5,8 @@
 package Controlador;
 
 import Vista.InterfazInicial;
+import Vista.gestionDeTurno;
+import Vista.registroDatosAlumno;
 
 /**
  *
@@ -17,6 +19,18 @@ public class controlador {
     public static void inicio(){
         InterfazInicial i= new InterfazInicial ();
         i.setVisible(true);
+    }
+    
+    public static void incioRegistroDatosAlumno(InterfazInicial i){
+        i.dispose();
+        registroDatosAlumno v = new registroDatosAlumno();
+        v.setVisible(true);
+    }
+    
+    public static void inicioGestionDeTurno(registroDatosAlumno i){
+        i.dispose();
+        gestionDeTurno t = new gestionDeTurno();
+        t.setVisible(true);
     }
             
 }

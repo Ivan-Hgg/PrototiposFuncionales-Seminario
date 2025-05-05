@@ -4,6 +4,8 @@
  */
 package Vista;
 
+import Controlador.controlador;
+
 /**
  *
  * @author Ivan y otros
@@ -27,29 +29,29 @@ public class InterfazInicial extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        soyAlumno = new javax.swing.JButton();
+        soyAdministrador = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setText("Gestion de Perfil");
 
-        jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton1.setText("Soy Alumno");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        soyAlumno.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        soyAlumno.setText("Soy Alumno");
+        soyAlumno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                soyAlumnoActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 51));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Soy Administrador");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        soyAdministrador.setBackground(new java.awt.Color(0, 0, 102));
+        soyAdministrador.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        soyAdministrador.setForeground(new java.awt.Color(255, 255, 255));
+        soyAdministrador.setText("Soy Administrador");
+        soyAdministrador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                soyAdministradorActionPerformed(evt);
             }
         });
 
@@ -60,8 +62,8 @@ public class InterfazInicial extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(115, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(soyAdministrador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(soyAlumno, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
                 .addGap(114, 114, 114))
         );
@@ -71,22 +73,23 @@ public class InterfazInicial extends javax.swing.JFrame {
                 .addGap(82, 82, 82)
                 .addComponent(jLabel1)
                 .addGap(30, 30, 30)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(soyAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(soyAdministrador, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(185, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void soyAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_soyAlumnoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        controlador.incioRegistroDatosAlumno(this);
+    }//GEN-LAST:event_soyAlumnoActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void soyAdministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_soyAdministradorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_soyAdministradorActionPerformed
 
     /**
      * @param args the command line arguments
@@ -124,8 +127,8 @@ public class InterfazInicial extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton soyAdministrador;
+    private javax.swing.JButton soyAlumno;
     // End of variables declaration//GEN-END:variables
 }
