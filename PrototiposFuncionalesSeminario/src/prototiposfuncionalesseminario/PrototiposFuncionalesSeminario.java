@@ -4,6 +4,9 @@
  */
 package prototiposfuncionalesseminario;
 
+import Controlador.controlador;
+import Vista.InterfazInicial;
+
 /**
  *
  * @author Ivan y otros
@@ -15,6 +18,7 @@ public class PrototiposFuncionalesSeminario {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        controlador.inicio();
     }
     
 }
