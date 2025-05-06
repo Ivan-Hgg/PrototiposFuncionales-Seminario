@@ -89,6 +89,7 @@ public class InterfazInicial extends javax.swing.JFrame {
 
     private void soyAdministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_soyAdministradorActionPerformed
         // TODO add your handling code here:
+        controlador.interfazAdmin1(this);
     }//GEN-LAST:event_soyAdministradorActionPerformed
 
     /**

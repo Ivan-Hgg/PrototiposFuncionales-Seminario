@@ -6,6 +6,10 @@ package Controlador;
 
 import Vista.InterfazInicial;
 import Vista.gestionDeTurno;
+import Vista.interfazAdmin1;
+import Vista.interfazAdmin2;
+import Vista.interfazAdminConfig;
+import Vista.interfazAdminVerTurnos;
 import Vista.registroDatosAlumno;
 
 /**
@@ -31,6 +35,30 @@ public class controlador {
         i.dispose();
         gestionDeTurno t = new gestionDeTurno();
         t.setVisible(true);
+    }
+    
+    public static void interfazAdmin1(InterfazInicial i){
+        i.dispose();
+        interfazAdmin1 vista= new interfazAdmin1();
+        vista.setVisible(true);
+    }
+    
+    public static void interfazAdmin2(interfazAdmin1 i){
+        i.dispose();
+        interfazAdmin2 vist = new interfazAdmin2();
+        vist.setVisible(true);
+    }
+    
+    public static void interfazAdminConfig(interfazAdmin2 i){
+        i.dispose();
+        interfazAdminConfig vista = new interfazAdminConfig();
+        vista.setVisible(true);
+    }
+    
+    public static void interfazAdminVerTurnos(interfazAdmin2 i){
+        i.dispose();
+        interfazAdminVerTurnos vista = new interfazAdminVerTurnos();
+        vista.setVisible(true);
     }
             
 }
