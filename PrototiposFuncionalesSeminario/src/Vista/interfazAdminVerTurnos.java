@@ -8,12 +8,12 @@ package Vista;
  *
  * @author carli
  */
-public class interfazAdminConfig extends javax.swing.JFrame {
+public class interfazAdminVerTurnos extends javax.swing.JFrame {
 
     /**
      * Creates new form interfazAdminConfig
      */
-    public interfazAdminConfig() {
+    public interfazAdminVerTurnos() {
         initComponents();
     }
 
@@ -72,7 +72,7 @@ public class interfazAdminConfig extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new interfazAdminConfig().setVisible(true);
+                new interfazAdminVerTurnos().setVisible(true);
             }
         });
     }
