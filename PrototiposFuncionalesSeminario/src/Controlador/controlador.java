@@ -5,12 +5,12 @@
 package Controlador;
 
 import Vista.InterfazInicial;
-import Vista.gestionDeTurno;
-import Vista.interfazAdmin1;
-import Vista.interfazAdmin2;
-import Vista.interfazAdminConfig;
-import Vista.interfazAdminVerTurnos;
-import Vista.registroDatosAlumno;
+import Vista.GestionDeTurno;
+import Vista.InterfazAdmin1;
+import Vista.InterfazAdmin2;
+import Vista.InterfazAdminConfig;
+import Vista.InterfazAdminVerTurnos;
+import Vista.RegistroDatosAlumno;
 
 /**
  *
@@ -27,37 +27,37 @@ public class controlador {
     
     public static void incioRegistroDatosAlumno(InterfazInicial i){
         i.dispose();
-        registroDatosAlumno v = new registroDatosAlumno();
+        RegistroDatosAlumno v = new RegistroDatosAlumno();
         v.setVisible(true);
     }
     
-    public static void inicioGestionDeTurno(registroDatosAlumno i){
+    public static void inicioGestionDeTurno(RegistroDatosAlumno i){
         i.dispose();
-        gestionDeTurno t = new gestionDeTurno();
+        GestionDeTurno t = new GestionDeTurno();
         t.setVisible(true);
     }
     
     public static void interfazAdmin1(InterfazInicial i){
         i.dispose();
-        interfazAdmin1 vista= new interfazAdmin1();
+        InterfazAdmin1 vista= new InterfazAdmin1();
         vista.setVisible(true);
     }
     
-    public static void interfazAdmin2(interfazAdmin1 i){
+    public static void interfazAdmin2(InterfazAdmin1 i){
         i.dispose();
-        interfazAdmin2 vist = new interfazAdmin2();
+        InterfazAdmin2 vist = new InterfazAdmin2();
         vist.setVisible(true);
     }
     
-    public static void interfazAdminConfig(interfazAdmin2 i){
+    public static void interfazAdminConfig(InterfazAdmin2 i){
         i.dispose();
-        interfazAdminConfig vista = new interfazAdminConfig();
+        InterfazAdminConfig vista = new InterfazAdminConfig();
         vista.setVisible(true);
     }
     
-    public static void interfazAdminVerTurnos(interfazAdmin2 i){
+    public static void interfazAdminVerTurnos(InterfazAdmin2 i){
         i.dispose();
-        interfazAdminVerTurnos vista = new interfazAdminVerTurnos();
+        InterfazAdminVerTurnos vista = new InterfazAdminVerTurnos();
         vista.setVisible(true);
     }
             

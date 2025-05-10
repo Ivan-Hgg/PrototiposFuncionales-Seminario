@@ -10,12 +10,12 @@ import Controlador.controlador;
  *
  * @author Ivan y otros
  */
-public class registroDatosAlumno extends javax.swing.JFrame {
+public class RegistroDatosAlumno extends javax.swing.JFrame {
 
     /**
      * Creates new form registroDatosAlumno
      */
-    public registroDatosAlumno() {
+    public RegistroDatosAlumno() {
         initComponents();
     }
 
@@ -167,20 +167,21 @@ public class registroDatosAlumno extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(registroDatosAlumno.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RegistroDatosAlumno.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(registroDatosAlumno.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RegistroDatosAlumno.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(registroDatosAlumno.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RegistroDatosAlumno.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(registroDatosAlumno.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RegistroDatosAlumno.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new registroDatosAlumno().setVisible(true);
+                new RegistroDatosAlumno().setVisible(true);
             }
         });
     }

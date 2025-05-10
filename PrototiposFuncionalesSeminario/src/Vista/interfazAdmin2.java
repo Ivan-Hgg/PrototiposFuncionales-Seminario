@@ -10,12 +10,12 @@ import Controlador.controlador;
  *
  * @author carli
  */
-public class interfazAdmin2 extends javax.swing.JFrame {
+public class InterfazAdmin2 extends javax.swing.JFrame {
 
     /**
      * Creates new form interfazAdmin2
      */
-    public interfazAdmin2() {
+    public InterfazAdmin2() {
         initComponents();
     }
 
@@ -114,20 +114,21 @@ public class interfazAdmin2 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(interfazAdmin2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazAdmin2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(interfazAdmin2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazAdmin2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(interfazAdmin2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazAdmin2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(interfazAdmin2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(InterfazAdmin2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new interfazAdmin2().setVisible(true);
+                new InterfazAdmin2().setVisible(true);
             }
         });
     }
