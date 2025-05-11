@@ -4,7 +4,7 @@
  */
 package Vista;
 
-import Controlador.controlador;
+import Controlador.Controlador;
 
 /**
  *
@@ -84,12 +84,12 @@ public class InterfazInicial extends javax.swing.JFrame {
 
     private void soyAlumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_soyAlumnoActionPerformed
         // TODO add your handling code here:
-        controlador.incioRegistroDatosAlumno(this);
+        Controlador.incioRegistroDatosAlumno(this);
     }//GEN-LAST:event_soyAlumnoActionPerformed
 
     private void soyAdministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_soyAdministradorActionPerformed
         // TODO add your handling code here:
-        controlador.interfazAdmin1(this);
+        Controlador.interfazAdmin1(this);
     }//GEN-LAST:event_soyAdministradorActionPerformed
 
     /**

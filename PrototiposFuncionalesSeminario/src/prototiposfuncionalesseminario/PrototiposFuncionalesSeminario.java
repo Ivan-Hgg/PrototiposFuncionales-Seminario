@@ -4,7 +4,7 @@
  */
 package prototiposfuncionalesseminario;
 
-import Controlador.controlador;
+import Controlador.Controlador;
 import Vista.InterfazInicial;
 
 /**
@@ -18,7 +18,7 @@ public class PrototiposFuncionalesSeminario {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        controlador.inicio();
+        Controlador.inicio();
     }
     
 }

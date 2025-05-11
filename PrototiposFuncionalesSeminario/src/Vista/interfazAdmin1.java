@@ -4,7 +4,7 @@
  */
 package Vista;
 
-import Controlador.controlador;
+import Controlador.Controlador;
 
 /**
  *
@@ -123,12 +123,12 @@ public class InterfazAdmin1 extends javax.swing.JFrame {
     private void VolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VolverActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        controlador.inicio();
+        Controlador.inicio();
     }//GEN-LAST:event_VolverActionPerformed
 
     private void InicioSesionBotonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InicioSesionBotonActionPerformed
         // TODO add your handling code here:
-        controlador.interfazAdmin2(this);
+        Controlador.interfazAdmin2(this);
         
     }//GEN-LAST:event_InicioSesionBotonActionPerformed
 

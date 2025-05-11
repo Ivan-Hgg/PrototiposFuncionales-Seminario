@@ -16,7 +16,7 @@ import Vista.RegistroDatosAlumno;
  *
  * @author Ivan y otros
  */
-public class controlador {
+public class Controlador {
     
     
     

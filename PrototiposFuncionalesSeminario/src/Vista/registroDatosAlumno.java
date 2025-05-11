@@ -4,7 +4,7 @@
  */
 package Vista;
 
-import Controlador.controlador;
+import Controlador.Controlador;
 
 /**
  *
@@ -147,7 +147,7 @@ public class RegistroDatosAlumno extends javax.swing.JFrame {
 
     private void continuarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_continuarActionPerformed
         // TODO add your handling code here:
-        controlador.inicioGestionDeTurno(this);
+        Controlador.inicioGestionDeTurno(this);
     }//GEN-LAST:event_continuarActionPerformed
 
     /**
